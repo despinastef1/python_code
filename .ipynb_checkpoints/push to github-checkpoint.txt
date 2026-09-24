@@ -1,0 +1,56 @@
+If you haven't pushed this folder to GitHub before, here's the full flow. Takes 2 minutes.
+
+### 1. Create the repo on GitHub
+Go to github.com -> New repository -> give it a name like `tiny-sales-notebook` -> **Don't** check "add README". Create.
+
+GitHub will show you a URL like: `https://github.com/yourname/tiny-sales-notebook.git`
+
+### 2. In your terminal / VS Code terminal, go to your notebook folder
+```bash
+cd path/to/your/notebook-folder
+```
+
+### 3. Push it
+
+Copy/paste these one by one:
+
+```bash
+# only needed the first time in this folder
+git init
+
+# add everything (your .ipynb, tiny_sales.csv)
+git add .
+
+# save a version
+git commit -m "add today's notebook"
+
+# rename branch to main
+git branch -M main
+
+# connect to GitHub - replace with YOUR url from step 1
+git remote add origin https://github.com/yourname/tiny-sales-notebook.git
+
+# push it up
+git push -u origin main
+```
+
+It will ask you to log in - use your GitHub username and a Personal Access Token (not your password). GitHub will prompt you to create one if you don't have it.
+
+### After today
+
+Next time you just need 3 commands:
+
+```bash
+git add .
+git commit -m "update notebook"
+git push
+```
+
+**Pro tip:** Create a `.gitignore` file in the folder so you don't push junk:
+
+```
+.ipynb_checkpoints/
+__pycache__/
+```
+
+Want me to give you the commands for your specific notebook file name?
