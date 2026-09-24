@@ -53,4 +53,15 @@ git push
 __pycache__/
 ```
 
-Want me to give you the commands for your specific notebook file name?
+To update a file in github:
+# 1. Check what's changed
+git status
+
+# 2. Add your updated file
+git add day-02-pandas-titanic.ipynb
+
+# 3. Save it with a message
+git commit -m "Add family size survival chart with footnote"
+
+# 4. Push to GitHub
+git push
